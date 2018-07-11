@@ -1,0 +1,9 @@
+<h1>Esta es la lista de comida:</h1>
+{{#each items as |food|}}
+<h3>
+    {{food.name}}
+    <a href="/food/{{food._id}}/delete">
+        Borrar comida
+    </a>
+</h3>  
+{{/each}}

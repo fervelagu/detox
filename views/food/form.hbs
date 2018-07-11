@@ -1,0 +1,15 @@
+<form action="/food/search" method="post">
+    <label>
+        Busqueda
+        <input type="text" id="search" name="name" placeholder="que quieresh comer hoy">
+    </label>
+    <input value="Search" type="submit">
+</form>
+
+{{#if items}}
+    <ul>
+        {{#each items}}
+            <li>{{this.name}}</li>
+        {{/each}}
+    </ul>
+{{/if}}
